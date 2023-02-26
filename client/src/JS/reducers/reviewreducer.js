@@ -1,4 +1,6 @@
+import { DELETEPRODUCT } from "../actiontypes/producttypes";
 import {
+  EDITREVIEW,
   GETPRODUCTREVIEWSSUCCESS,
   RFAILD,
   RLOADING,
@@ -8,6 +10,8 @@ const initialState = {
   loading: true,
   reviews: [],
   error: null,
+  editRevData: [],
+  id: "",
 };
 
 export const reviewreducers = (state = initialState, { type, payload }) => {
@@ -19,6 +23,12 @@ export const reviewreducers = (state = initialState, { type, payload }) => {
       return { ...state, reviews: payload, loading: false };
     case RFAILD:
       return { ...state, error: payload, loading: false };
+    case DELETEPRODUCT:
+      return { ...state, id: payload };
+
+    case EDITREVIEW:
+      return { ...state, editRevData: payload };
+
     default:
       return state;
   }

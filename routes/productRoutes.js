@@ -26,7 +26,7 @@ router.get("/:idprod",getoneprod)
  * @description update  product
  * @access public
  */
-router.put("/:idprod",updateprod)
+router.patch("/:idprod",updateprod)
  /**
  * @route delete /product/:idprod
  * @description delete  product

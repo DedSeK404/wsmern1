@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.add{
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(51, 99, 230);
+  color: white;
+}
+img{
+  width: 250px;
+  height:250px
+}
+
+
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #000;
+}
+.off {
+  color: #ccc;
+}
+
+.stars{
+  pointer-events:none
+}

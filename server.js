@@ -2,7 +2,7 @@
 const express = require("express")
 const app = express()
 require("dotenv").config({path:"./config/.env"})
-const port = process.env.Port || 5000
+const port = process.env.Port || 7000
 // 2 conction data base
 const db=require("./config/conctiondb")
 db()
